@@ -27,35 +27,35 @@ const Menu = () => {
           </TabList>
         </div>
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {menu.map((item) => (
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {pizza.map((item) => (
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {pasta.map((item) => (
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {burger.map((item) => (
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {iceCream.map((item) => (
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}

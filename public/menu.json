@@ -1,4 +1,35 @@
-[
+[  {
+    "_id": "65235b867432950a4b58be5b",
+    "price": "$23",
+    "picture": "../src/assets/Home/menu/pizza2.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b867d1bab3b7121cd5b",
+    "price": "$47",
+    "picture": "../src/assets/Home/menu/pizza.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b86cdc7f1cc484d2142",
+    "price": "$65",
+    "picture": "../src/assets/Home/menu/pizza4.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b8665ead1db3f3b12c8",
+    "price": "$71",
+    "picture": "../src/assets/Home/menu/pizza3.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
   {
     "_id": "65235b860729a3f2a58bd88e",
     "price": "$16",
@@ -86,37 +117,7 @@
     "name": "Pasta",
     "category": "Pasta",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
-  {
-    "_id": "65235b867432950a4b58be5b",
-    "price": "$23",
-    "picture": "../src/assets/Home/menu/pizza2.jpg",
-    "name": "Pizza",
-    "category": "Pizza",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
-  {
-    "_id": "65235b867d1bab3b7121cd5b",
-    "price": "$47",
-    "picture": "../src/assets/Home/menu/pizza.jpg",
-    "name": "Pizza",
-    "category": "Pizza"
-  },
-  {
-    "_id": "65235b86cdc7f1cc484d2142",
-    "price": "$65",
-    "picture": "../src/assets/Home/menu/pizza4.jpg",
-    "name": "Pizza",
-    "category": "Pizza",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
-  {
-    "_id": "65235b8665ead1db3f3b12c8",
-    "price": "$71",
-    "picture": "../src/assets/Home/menu/pizza3.jpg",
-    "name": "Pizza",
-    "category": "Pizza",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   }
+
   
 ]

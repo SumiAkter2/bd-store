@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import bannerImg from "../../assets/Home/Banner/banner1.jpg";
-import bannerImg2 from "../../assets/Home/Banner/banner2.jpg";
+import bannerImg from "../../assets/Home/menu/burger.jpg";
+import bannerImg2 from "../../assets/Home/menu/pizza3.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Banner.css";
+
 import { Autoplay, Pagination } from "swiper/modules";
 
 const Banner = () => {
@@ -35,10 +35,12 @@ const Banner = () => {
               backgroundImage: `url(${bannerImg})`,
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-black bg-opacity-40"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Lorem ipsum dolor sit amet.</h1>
+                <h1 className="mb-5 text-5xl font-bold">
+                  Lorem ipsum dolor sit amet.
+                </h1>
                 <p className="mb-5">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut
                   assumenda excepturi exercitationem quasi. In deleniti eaque
@@ -57,10 +59,12 @@ const Banner = () => {
               backgroundImage: `url(${bannerImg2})`,
             }}
           >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-black bg-opacity-40"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Lorem ipsum dolor sit amet.</h1>
+                <h1 className="mb-5 text-5xl font-bold">
+                  Lorem ipsum dolor sit amet.
+                </h1>
                 <p className="mb-5">
                   Provident cupiditate voluptatem et in. Quaerat fugiat ut
                   assumenda excepturi exercitationem quasi. In deleniti eaque
