@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "65235b860729a3f2a58bd88e",
+    "price": "$16",
+    "picture": "../src/assets/Home/menu/burger.jpg",
+    "name": "Burger",
+    "category": "Burger",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b869fdeb0cd171a92ac",
+    "price": "$30",
+    "picture": "../src/assets/Home/menu/burger2.jpg",
+    "name": "Burger",
+    "category": "Burger",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b86093284dd42f78ec0",
+    "price": "$28",
+    "picture": "../src/assets/Home/menu/burger3.jpg",
+    "name": "Burger",
+    "category": "Burger",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b8699fff948d530ac04",
+    "price": "$41",
+    "picture": "../src/assets/Home/menu/icecream.jpeg",
+    "name": "Ice Cream",
+    "category": "IceCream",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b866ce22f31d9995832",
+    "price": "$36",
+    "picture": "../src/assets/Home/menu/icecream2.jpg",
+    "name": "Ice Cream",
+    "category": "IceCream",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b86e33e6ed171412155",
+    "price": "$52",
+    "picture": "../src/assets/Home/menu/icecream3.jpg",
+    "name": "Ice Cream",
+    "category": "IceCream",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b8601ec475ef4f06710",
+    "price": "$68",
+    "picture": "../src/assets/Home/menu/icecream4.jpg",
+    "name": "Ice Cream",
+    "category": "IceCream",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b86dc010f3046d25ea3",
+    "price": "$16",
+    "picture": "../src/assets/Home/menu/pasta.jpeg",
+    "name": "Pasta",
+    "category": "Pasta",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b867ebd1fcc0b4c0132",
+    "price": "$29",
+    "picture": "../src/assets/Home/menu/pasta2.jpg",
+    "name": "Pasta",
+    "category": "Pasta",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b862540cb80dcee8961",
+    "price": "$10",
+    "picture": "../src/assets/Home/menu/pasta3.jpg",
+    "name": "Pasta",
+    "category": "Pasta",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b86c91d70952ace8304",
+    "price": "$97",
+    "picture": "../src/assets/Home/menu/pasta4.webp",
+    "name": "Pasta",
+    "category": "Pasta",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b867432950a4b58be5b",
+    "price": "$23",
+    "picture": "../src/assets/Home/menu/pizza2.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b867d1bab3b7121cd5b",
+    "price": "$47",
+    "picture": "../src/assets/Home/menu/pizza.jpg",
+    "name": "Pizza",
+    "category": "Pizza"
+  },
+  {
+    "_id": "65235b86cdc7f1cc484d2142",
+    "price": "$65",
+    "picture": "../src/assets/Home/menu/pizza4.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b8665ead1db3f3b12c8",
+    "price": "$71",
+    "picture": "../src/assets/Home/menu/pizza3.jpg",
+    "name": "Pizza",
+    "category": "Pizza",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  }
+  
+]
