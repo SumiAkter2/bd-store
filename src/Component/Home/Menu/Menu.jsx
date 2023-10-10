@@ -2,6 +2,11 @@ import useMenu from "../../../Hook/useMenu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import MenuInfo from "./MenuInfo";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
 
 const Menu = () => {
   const { menu } = useMenu();
@@ -34,12 +39,56 @@ const Menu = () => {
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
-            {pizza.map((item) => (
-              <MenuInfo key={item._id} item={item}></MenuInfo>
-            ))}
+          <div className="mx-6">
+            <Swiper
+              breakpoints={{
+                576: {
+                  // width: 276,
+                  slidesPerView: 2,
+                },
+                768: {
+                  // width: 768,
+                  slidesPerView: 3,
+                },
+              }}
+              // slidesPerView={"3"}
+              spaceBetween={30}
+              pagination={{
+                type: "progressbar",
+              }}
+              // navigation={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+            >
+              {pizza.map((item) => (
+                <SwiperSlide key={item._id} item={item}>
+                  <div
+                    className="text-start rounded-lg md:h-96 p-6 lg:m-6 m-4"
+                    style={{
+                      background: `url(${item.picture})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 m-6 p-6 rounded-lg">
+                      <div className="pl-6">
+                        <h4 className="text-2xl font-bold">{item.name} </h4>
+                        <p className="font-semibold text-sm py-2">{item.des}</p>
+                        <button className="btn text-xs bg-gray-300 font-bold">
+                          Add To cart
+                        </button>
+                      </div>
+
+                      <p className="text-2xl font-bold">{item.price}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </TabPanel>
+        {/* 
         <TabPanel>
           <div className="grid md:grid-cols-2 gap-6 mx-6 ">
             {pasta.map((item) => (
@@ -60,7 +109,7 @@ const Menu = () => {
               <MenuInfo key={item._id} item={item}></MenuInfo>
             ))}
           </div>
-        </TabPanel>
+        </TabPanel> */}
       </Tabs>
     </div>
   );
