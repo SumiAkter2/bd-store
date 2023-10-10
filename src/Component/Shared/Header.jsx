@@ -1,9 +1,9 @@
 const Header = () => {
   return (
     <div>
-      <div className="navbar bg-gray-200">
+      <div className="navbar bg-gray-200 ">
         <div className="navbar-start">
-          <a className="btn btn-ghost normal-case text-xl">Bd Store</a>
+          <a className="btn btn-ghost normal-case text-xl"># Bd Store</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -18,7 +18,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-center absolute right-10">
+        <div className="navbar-center absolute right-5">
           {/* cart */}
 
           <div className="drawer drawer-end z-50">
@@ -61,30 +61,10 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-
-            <div className="dropdown dropdown-end">
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
-            </div>
           </div>
           {/* menu */}
 
-          <div className="drawer drawer lg:hidden">
+          <div className="drawer  lg:hidden">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               <label
