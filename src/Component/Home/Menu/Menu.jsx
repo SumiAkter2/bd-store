@@ -1,12 +1,10 @@
 import useMenu from "../../../Hook/useMenu";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import MenuInfo from "./MenuInfo";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 const Menu = () => {
   const { menu } = useMenu();
@@ -25,45 +23,45 @@ const Menu = () => {
         <div className=" flex justify-center my-12">
           <TabList>
             <Tab>All Category</Tab>
+            <Tab>Burger</Tab>
             <Tab>Pizza</Tab>
             <Tab>Pasta</Tab>
-            <Tab>Burger</Tab>
             <Tab>Ice Cream</Tab>
           </TabList>
         </div>
-        <TabPanel>
-          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
-            {menu.map((item) => (
-              <MenuInfo key={item._id} item={item}></MenuInfo>
-            ))}
-          </div>
-        </TabPanel>
+        {/* all category */}
         <TabPanel>
           <div className="mx-6">
             <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
               breakpoints={{
-                576: {
-                  // width: 276,
+                0: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1.5,
+                },
+                400: {
                   slidesPerView: 2,
                 },
-                768: {
-                  // width: 768,
+                639: {
+                  slidesPerView: 2,
+                },
+                865: {
                   slidesPerView: 3,
                 },
               }}
-              // slidesPerView={"3"}
-              spaceBetween={30}
               pagination={{
                 type: "progressbar",
               }}
-              // navigation={true}
-              modules={[Pagination, Navigation]}
-              className="mySwiper"
+              modules={[Pagination]}
+              className="lg:mx-12 mx-6"
             >
-              {pizza.map((item) => (
+              {menu.map((item) => (
                 <SwiperSlide key={item._id} item={item}>
                   <div
-                    className="text-start rounded-lg md:h-96 p-6 lg:m-6 m-4"
+                    className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12"
                     style={{
                       background: `url(${item.picture})`,
                       backgroundPosition: "center",
@@ -71,16 +69,22 @@ const Menu = () => {
                       backgroundRepeat: "no-repeat",
                     }}
                   >
-                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 m-6 p-6 rounded-lg">
-                      <div className="pl-6">
-                        <h4 className="text-2xl font-bold">{item.name} </h4>
-                        <p className="font-semibold text-sm py-2">{item.des}</p>
-                        <button className="btn text-xs bg-gray-300 font-bold">
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 lg:p-6 p-2 rounded-lg">
+                      <div className="pl-2 ">
+                        <h4 className="lg:text-2xl text-xl font-bold">
+                          {item.name}
+                        </h4>
+                        <p className="font-semibold lg:text-sm text-xs py-2">
+                          {item.des}
+                        </p>
+                        <button className="btn btn-sm lg:btn-md bg-gray-300 font-bold my-4">
                           Add To cart
                         </button>
                       </div>
 
-                      <p className="text-2xl font-bold">{item.price}</p>
+                      <p className="lg:text-2xl text-xl font-bold">
+                        {item.price}
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -88,28 +92,258 @@ const Menu = () => {
             </Swiper>
           </div>
         </TabPanel>
-        {/* 
+        {/* burger */}
         <TabPanel>
-          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
-            {pasta.map((item) => (
-              <MenuInfo key={item._id} item={item}></MenuInfo>
-            ))}
+          <div className="mx-6">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1.5,
+                },
+                400: {
+                  slidesPerView: 2,
+                },
+                639: {
+                  slidesPerView: 2,
+                },
+                865: {
+                  slidesPerView: 3,
+                },
+              }}
+              pagination={{
+                type: "progressbar",
+              }}
+              modules={[Pagination]}
+              className="lg:mx-12 mx-6"
+            >
+              {burger.map((item) => (
+                <SwiperSlide key={item._id} item={item}>
+                  <div
+                    className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12"
+                    style={{
+                      background: `url(${item.picture})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 lg:p-6 p-2 rounded-lg">
+                      <div className="pl-2 ">
+                        <h4 className="lg:text-2xl text-xl font-bold">
+                          {item.name}
+                        </h4>
+                        <p className="font-semibold lg:text-sm text-xs py-2">
+                          {item.des}
+                        </p>
+                        <button className="btn btn-sm lg:btn-md bg-gray-300 font-bold my-4">
+                          Add To cart
+                        </button>
+                      </div>
+
+                      <p className="lg:text-2xl text-xl font-bold">
+                        {item.price}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </TabPanel>
+        {/* pizza */}
         <TabPanel>
-          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
-            {burger.map((item) => (
-              <MenuInfo key={item._id} item={item}></MenuInfo>
-            ))}
+          <div className="mx-6">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1.5,
+                },
+                400: {
+                  slidesPerView: 2,
+                },
+                639: {
+                  slidesPerView: 2,
+                },
+                865: {
+                  slidesPerView: 3,
+                },
+              }}
+              pagination={{
+                type: "progressbar",
+              }}
+              modules={[Pagination]}
+              className="lg:mx-12 mx-6"
+            >
+              {pizza.map((item) => (
+                <SwiperSlide key={item._id} item={item}>
+                  <div
+                    className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12"
+                    style={{
+                      background: `url(${item.picture})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 lg:p-6 p-2 rounded-lg">
+                      <div className="pl-2 ">
+                        <h4 className="lg:text-2xl text-xl font-bold">
+                          {item.name}
+                        </h4>
+                        <p className="font-semibold lg:text-sm text-xs py-2">
+                          {item.des}
+                        </p>
+                        <button className="btn btn-sm lg:btn-md bg-gray-300 font-bold my-4">
+                          Add To cart
+                        </button>
+                      </div>
+
+                      <p className="lg:text-2xl text-xl font-bold">
+                        {item.price}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </TabPanel>
+        {/* pasta */}
         <TabPanel>
-          <div className="grid md:grid-cols-2 gap-6 mx-6 ">
-            {iceCream.map((item) => (
-              <MenuInfo key={item._id} item={item}></MenuInfo>
-            ))}
+          <div className="mx-6">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1.5,
+                },
+                400: {
+                  slidesPerView: 2,
+                },
+                639: {
+                  slidesPerView: 2,
+                },
+                865: {
+                  slidesPerView: 3,
+                },
+              }}
+              pagination={{
+                type: "progressbar",
+              }}
+              modules={[Pagination]}
+              className="lg:mx-12 mx-6"
+            >
+              {pasta.map((item) => (
+                <SwiperSlide key={item._id} item={item}>
+                  <div
+                    className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12"
+                    style={{
+                      background: `url(${item.picture})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 lg:p-6 p-2 rounded-lg">
+                      <div className="pl-2 ">
+                        <h4 className="lg:text-2xl text-xl font-bold">
+                          {item.name}
+                        </h4>
+                        <p className="font-semibold lg:text-sm text-xs py-2">
+                          {item.des}
+                        </p>
+                        <button className="btn btn-sm lg:btn-md bg-gray-300 font-bold my-4">
+                          Add To cart
+                        </button>
+                      </div>
+
+                      <p className="lg:text-2xl text-xl font-bold">
+                        {item.price}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-        </TabPanel> */}
+        </TabPanel>
+        {/* ice cream */}
+        <TabPanel>
+          <div className="mx-6">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                300: {
+                  slidesPerView: 1.5,
+                },
+                400: {
+                  slidesPerView: 2,
+                },
+                639: {
+                  slidesPerView: 2,
+                },
+                865: {
+                  slidesPerView: 3,
+                },
+              }}
+              pagination={{
+                type: "progressbar",
+              }}
+              modules={[Pagination]}
+              className="lg:mx-12 mx-6"
+            >
+              {iceCream.map((item) => (
+                <SwiperSlide key={item._id} item={item}>
+                  <div
+                    className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12"
+                    style={{
+                      background: `url(${item.picture})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 lg:p-6 p-2 rounded-lg">
+                      <div className="pl-2 ">
+                        <h4 className="lg:text-2xl text-xl font-bold">
+                          {item.name}
+                        </h4>
+                        <p className="font-semibold lg:text-sm text-xs py-2">
+                          {item.des}
+                        </p>
+                        <button className="btn btn-sm lg:btn-md bg-gray-300 font-bold my-4">
+                          Add To cart
+                        </button>
+                      </div>
+
+                      <p className="lg:text-2xl text-xl font-bold">
+                        {item.price}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </TabPanel>
       </Tabs>
     </div>
   );
