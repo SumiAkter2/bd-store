@@ -9,7 +9,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const Category = () => {
   const { menu } = useMenu();
   return (
-    <div className="mx-6 my-12 lg:block hidden">
+    <div className="mx-6 my-12 ">
       <Swiper
         spaceBetween={20}
         slidesPerView={3}
@@ -35,12 +35,12 @@ const Category = () => {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
-        className="lg:mx-12 mx-6"
+        className="lg:mx-12 mx-2"
       >
         {menu.map((item) => (
           <SwiperSlide key={item._id} item={item}>
             <div
-              className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12 "
+              className="text-start rounded-lg lg:h-96 h-80 lg:p-6 p-2 mt-12 "
               style={{
                 background: `url(${item.picture})`,
                 backgroundPosition: "center",

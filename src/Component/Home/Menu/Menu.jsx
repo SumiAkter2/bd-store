@@ -12,35 +12,24 @@ const Menu = () => {
 
       {/* all product*/}
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:mx-12 mx-2">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:mx-12 mx-2">
         {menu.map((item) => (
           <div key={item._id}>
-            <div
-              className="text-start rounded-lg md:h-96 lg:p-6 p-2 mt-12 border-4 border-slate-400 hover:border-0 transition-all"
-              style={{
-                background: `url(${item.picture})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="flex justify-start items-start bg-black opacity-80 text-white md:h-60 lg:m-6 m-2 p-6 rounded-lg">
-                <div className="pl-2 ">
-                  <h4 className="lg:text-2xl text-xl font-bold">{item.name}</h4>
-                  <p className="lg:text-2xl lg:hidden block text-xl font-bold">
-                    {item.price}
-                  </p>
-                  <p className="font-semibold lg:text-sm text-xs py-2">
-                    {item.des}
-                  </p>
-                  <button className="btn bg-gray-300 font-bold my-4">
-                    Add To cart
-                  </button>
-                </div>
+            <div className="card bg-gray-200 shadow-xl shadow-gray-600">
+              <figure>
+                <img
+                  src={item.picture}
+                  alt="image"
+                  className="lg:h-64 h-56 w-64 rounded-2xl m-4 lg:w-96"
+                />
+              </figure>
+              <div className="card-body ">
+                <h2 className="card-title">{item.name}</h2>
 
-                <p className="lg:text-2xl lg:block hidden  text-sm font-bold">
-                  {item.price}
-                </p>
+                <div className="card-actions justify-between items-center">
+                  <h1 className="text-xl font-bold">{item.price} </h1>
+                  <button className="btn bg-gray-400">Add To Cart</button>
+                </div>
               </div>
             </div>
           </div>
