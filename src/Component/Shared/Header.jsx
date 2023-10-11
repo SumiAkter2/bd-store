@@ -1,5 +1,7 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CgMenuRightAlt } from "react-icons/cg";
+import img from "../../assets/Home/menu/burger.jpg";
+
 const Header = () => {
   return (
     <div>
@@ -10,13 +12,13 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li>
-              <a>Parent</a>
+              <a>About</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Contact Us</a>
             </li>
           </ul>
         </div>
@@ -42,10 +44,45 @@ const Header = () => {
                 className="drawer-overlay"
               ></label>
               <div className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                <h1 className="text-xl uppercase"> Cart</h1>
+                <h1 className="text-xl uppercase bg-gray-300 p-6 rounded-lg">
+                  Cart
+                </h1>
+
+                <div className="mt-12">
+                  <div className="flex">
+                    <img
+                      className="w-24 rounded-lg"
+                      src={img}
+                      alt="product-img"
+                    />
+                    <div className="text-xl pl-2">
+                      <h1>Large Size Burger</h1>
+                      <p className="font-bold">$34</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-around items-center mt-12">
+                    <div className="join join-vertical lg:join-horizontal outline outline-1">
+                      <button className="btn join-item">-</button>
+                      <button className="btn join-item">1</button>
+                      <button className="btn join-item">+</button>
+                    </div>
+                    <button className="btn btn-outline bg-gray-300">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+
+                <div className="absolute bottom-5 font-bold w-72">
+                  <div className="divider "></div>
+                  <h1 className="text-2xl mb-6">Add Order Note</h1>
+                  <div className="text-xl bg-gray-400 p-6 rounded-lg flex justify-between ">
+                    <p>Check Out </p> <p>$34</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           {/* menu */}
 
           <div className="drawer  lg:hidden">
@@ -67,10 +104,13 @@ const Header = () => {
               <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content ">
                 {/* Sidebar content here */}
                 <li>
-                  <a>Menu Item 1</a>
+                  <a>Home</a>
                 </li>
                 <li>
-                  <a>Menu Item 2</a>
+                  <a>About</a>
+                </li>
+                <li>
+                  <a>Contact Us</a>
                 </li>
               </ul>
             </div>
