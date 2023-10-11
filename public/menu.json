@@ -6,14 +6,31 @@
     "category": "Pizza",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
-  {
-    "_id": "65235b867d1bab3b7121cd5b",
-    "price": "$47",
-    "picture": "https://i.ibb.co/6t4BcTp/pizza2.jpg",
-    "name": "Pizza",
-    "category": "Pizza",
-     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+   {
+    "_id": "65235b860729a3f2a58bd88e",
+    "price": "$16",
+    "picture": "https://i.ibb.co/ys4Hsjj/burger.jpg",
+    "name": "Burger",
+    "category": "Burger",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
+   {
+    "_id": "65235b8601ec475ef4f06710",
+    "price": "$68",
+    "picture": "https://i.ibb.co/rwFYXnf/icecream4.jpg",
+    "name": "Ice Cream",
+    "category": "IceCream",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  {
+    "_id": "65235b862540cb80dcee8961",
+    "price": "$10",
+    "picture": "https://i.ibb.co/nsvy2nK/pasta3.jpg",
+    "name": "Pasta",
+    "category": "Pasta",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
+  },
+  
   {
     "_id": "65235b86cdc7f1cc484d2142",
     "price": "$65",
@@ -30,14 +47,7 @@
     "category": "Pizza",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
-  {
-    "_id": "65235b860729a3f2a58bd88e",
-    "price": "$16",
-    "picture": "https://i.ibb.co/ys4Hsjj/burger.jpg",
-    "name": "Burger",
-    "category": "Burger",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
+ 
   {
     "_id": "65235b869fdeb0cd171a92ac",
     "price": "$30",
@@ -46,22 +56,7 @@
     "category": "Burger",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
-  {
-    "_id": "65235b86093284dd42f78ec0",
-    "price": "$28",
-    "picture": "https://i.ibb.co/YW96fxf/burger3.jpg",
-    "name": "Burger",
-    "category": "Burger",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
-  {
-    "_id": "65235b8699fff948d530ac04",
-    "price": "$41",
-    "picture": "https://i.ibb.co/KzJVwZz/icecream.jpg",
-    "name": "Ice Cream",
-    "category": "IceCream",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
+  
   {
     "_id": "65235b866ce22f31d9995832",
     "price": "$36",
@@ -78,14 +73,7 @@
     "category": "IceCream",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
-  {
-    "_id": "65235b8601ec475ef4f06710",
-    "price": "$68",
-    "picture": "https://i.ibb.co/rwFYXnf/icecream4.jpg",
-    "name": "Ice Cream",
-    "category": "IceCream",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
+ 
   {
     "_id": "65235b86dc010f3046d25ea3",
     "price": "$16",
@@ -94,14 +82,7 @@
     "category": "Pasta",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
-  {
-    "_id": "65235b867ebd1fcc0b4c0132",
-    "price": "$29",
-    "picture": "https://i.ibb.co/7G57gQj/pasta.jpg",
-    "name": "Pasta",
-    "category": "Pasta",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
+  
   {
     "_id": "65235b862540cb80dcee8961",
     "price": "$10",
@@ -111,13 +92,14 @@
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
   {
-    "_id": "65235b86c91d70952ace8304",
-    "price": "$97",
-    "picture": "https://i.ibb.co/ggQtNqx/pasta4.web",
-    "name": "Pasta",
-    "category": "Pasta",
+    "_id": "65235b86093284dd42f78ec0",
+    "price": "$28",
+    "picture": "https://i.ibb.co/YW96fxf/burger3.jpg",
+    "name": "Burger",
+    "category": "Burger",
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   }
+  
 
   
 ]
