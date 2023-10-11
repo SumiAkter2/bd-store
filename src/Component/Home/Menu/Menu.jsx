@@ -12,15 +12,15 @@ const Menu = () => {
 
       {/* all product*/}
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:mx-12 mx-2">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:mx-8 mx-2">
         {menu.map((item) => (
           <div key={item._id}>
-            <div className="card bg-gray-200 shadow-xl shadow-gray-600">
+            <div className="card bg-gray-200 hover:bg-gray-100 shadow-xl shadow-gray-400">
               <figure>
                 <img
                   src={item.picture}
                   alt="image"
-                  className="lg:h-64 h-56 w-64 rounded-2xl m-4 lg:w-96"
+                  className="lg:h-64 h-56 w-64 rounded-2xl m-4 lg:w-80"
                 />
               </figure>
               <div className="card-body ">
