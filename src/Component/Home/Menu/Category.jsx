@@ -4,7 +4,6 @@ import "react-tabs/style/react-tabs.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
 
 const Category = () => {
   const { menu } = useMenu();
@@ -15,80 +14,35 @@ const Category = () => {
       </h1>
       <Swiper
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={4}
         breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
           300: {
-            slidesPerView: 1.5,
-          },
-          400: {
-            slidesPerView: 2,
-          },
-          639: {
-            slidesPerView: 2,
-          },
-          865: {
             slidesPerView: 3,
           },
+          400: {
+            slidesPerView: 3,
+          },
+          639: {
+            slidesPerView: 3,
+          },
+          865: {
+            slidesPerView: 4,
+          },
         }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          type: "progressbar",
-          width: "300px",
-          height: "200px",
-          color: "red",
-        }}
-        modules={[Pagination, Autoplay]}
         className="lg:mx-12 mx-2"
-        style={{
-          "--swiper-pagination-color": "#FFBA80",
-          "--swiper-pagination-length": "16px",
-        }}
       >
-        {menu.slice(0, 4).map((item) => (
+        {menu.slice(0, 8).map((item) => (
           <SwiperSlide key={item._id} item={item}>
-            {/* <div
-              className="text-start rounded-lg lg:h-96 h-80 lg:p-6 p-2 mt-12 "
-              style={{
-                background: `url(${item.picture})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="my-6">
               <div>
-                <h1 className="text-5xl font-bold text-yellow-600 absolute bottom-5 ">
+                <img
+                  className=" rounded-lg lg:h-96 h-32"
+                  src={item.picture}
+                  alt="image"
+                />
+                <h1 className="lg:text-3xl text-sm font-bold text-yellow-600 pl-2 mt-3">
                   {item.name}
                 </h1>
-              </div>
-            </div> */}
-            <div className="my-12 ">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="500"
-                className="gallery-image"
-              >
-                <div className="img-box">
-                  <img
-                    className="rounded-lg  h-80 "
-                    src={item.picture}
-                    alt="category image"
-                  />
-                  <div className="transparent-box">
-                    <div className="caption flex justify-start  items-end w-full">
-                      <div>
-                        <h1 className="lg:text-5xl text-2xl font-bold  text-yellow-600 pl-5">
-                          {item.name}
-                        </h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </SwiperSlide>
