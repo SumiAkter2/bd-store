@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Feature from "./Feature";
 import Category from "./Menu/Category";
 import Menu from "./Menu/Menu";
 
@@ -6,7 +7,8 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <Category/>
+      <Feature />
+      <Category />
       <Menu />
     </div>
   );

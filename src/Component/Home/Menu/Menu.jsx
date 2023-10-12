@@ -1,5 +1,5 @@
 import useMenu from "../../../Hook/useMenu";
-
+import { AiFillStar } from "react-icons/ai";
 const Menu = () => {
   const { menu } = useMenu();
 
@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="my-12">
       <div className="text-center">
         <p>We Provide best food for our clients</p>
-        <h1 className="text-4xl font-bold mb-12">Our Menu</h1>
+        <h1 className="text-4xl font-bold mb-12 text-yellow-600">Our Menu</h1>
       </div>
 
       {/* all product*/}
@@ -15,20 +15,32 @@ const Menu = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:mx-8 mx-2">
         {menu.map((item) => (
           <div key={item._id}>
-            <div className="card bg-gray-200 lg:hover:bg-gray-100 shadow-xl shadow-gray-400">
+            <div className="card hover:border-yellow-600 hover:border-2 p-2 shadow-2xl ease-in duration-200">
               <figure>
                 <img
                   src={item.picture}
                   alt="image"
-                  className="lg:h-72 m-2 h-32 w-32 rounded-2xl lg:w-96"
+                  className="lg:h-72 h-32 w-32 rounded-2xl lg:w-96"
                 />
               </figure>
-              <div className="p-4 ">
-                <h2 className="card-title">{item.name}</h2>
-
+              <div className="p-4 card-body">
+                <div className="flex justify-between items-center text-xl font-bold">
+                  <h2 className="text-yellow-600">{item.name}</h2>
+                  <h1>{item.price} </h1>
+                </div>
+                <p>{item.des} </p>
                 <div className="card-actions justify-between items-center">
-                  <h1 className="text-xl font-bold">{item.price} </h1>
-                  <button className="btn bg-gray-400">Add To Cart</button>
+                  <div className="flex justify-start items-center">
+                    <AiFillStar color="#dfac02" />
+                    <AiFillStar color="#dfac02" />
+                    <AiFillStar color="#dfac02" />
+                    <AiFillStar color="#dfac02" />
+                    <AiFillStar color="#dfac02" />
+                  </div>
+
+                  <button className="btn bg-yellow-600 bg-gray-400">
+                    Add To Cart
+                  </button>
                 </div>
               </div>
             </div>

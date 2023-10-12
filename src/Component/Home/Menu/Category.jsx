@@ -10,7 +10,9 @@ const Category = () => {
   const { menu } = useMenu();
   return (
     <div className="mx-6 my-12 ">
-      <h1 className="text-3xl font-bold text-yellow-600 lg:pl-12">Category</h1>
+      <h1 className="text-3xl font-bold text-yellow-600 text-center mb-12">
+        Our Category
+      </h1>
       <Swiper
         spaceBetween={20}
         slidesPerView={3}
@@ -35,8 +37,18 @@ const Category = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        pagination={{
+          type: "progressbar",
+          width: "300px",
+          height: "200px",
+          color: "red",
+        }}
         modules={[Pagination, Autoplay]}
         className="lg:mx-12 mx-2"
+        style={{
+          "--swiper-pagination-color": "#FFBA80",
+          "--swiper-pagination-length": "16px",
+        }}
       >
         {menu.slice(0, 4).map((item) => (
           <SwiperSlide key={item._id} item={item}>
