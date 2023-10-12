@@ -2,7 +2,7 @@ import Img from "../../assets/Home/menu/burger3.jpg";
 
 const Feature = () => {
   return (
-    <div className="hero min-h-screen text-black mb-24">
+    <div className="hero min-h-screen text-black mb-24 bg-white">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           data-aos="zoom-in"
