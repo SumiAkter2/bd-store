@@ -65,9 +65,7 @@ const Header = () => {
                   <p className="font-bold text-xl mb-4">$34</p>
 
                   <div>
-                    <button className="btn  bg-yellow-500">
-                      Remove
-                    </button>
+                    <button className="btn  bg-yellow-500">Remove</button>
                   </div>
                 </div>
 

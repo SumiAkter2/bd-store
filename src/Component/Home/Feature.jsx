@@ -5,11 +5,7 @@ const Feature = () => {
     <div>
       <div className="hero min-h-screen text-black mb-24">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src={Img}
-            className="md:max-w-lg rounded-lg px-6"
-            alt="stock market image"
-          />
+          <img src={Img} className="md:max-w-lg rounded-lg px-6" alt=" image" />
           <div className="md:w-1/2 px-6">
             <p className=" my-2 font-semibold ">You are most welcome</p>
             <h1 className="text-4xl font-bold mb-6 text-yellow-600">
