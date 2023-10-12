@@ -83,14 +83,7 @@
     "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
   },
   
-  {
-    "_id": "65235b862540cb80dcee8961",
-    "price": "$10",
-    "picture": "https://i.ibb.co/nsvy2nK/pasta3.jpg",
-    "name": "Pasta",
-    "category": "Pasta",
-    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit."
-  },
+  
   {
     "_id": "65235b86093284dd42f78ec0",
     "price": "$28",

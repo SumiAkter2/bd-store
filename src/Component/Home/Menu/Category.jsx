@@ -10,6 +10,7 @@ const Category = () => {
   const { menu } = useMenu();
   return (
     <div className="mx-6 my-12 ">
+      <h1 className="text-3xl font-bold text-yellow-600 lg:pl-12">Category</h1>
       <Swiper
         spaceBetween={20}
         slidesPerView={3}
@@ -37,7 +38,7 @@ const Category = () => {
         modules={[Pagination, Autoplay]}
         className="lg:mx-12 mx-2"
       >
-        {menu.map((item) => (
+        {menu.slice(0, 4).map((item) => (
           <SwiperSlide key={item._id} item={item}>
             <div
               className="text-start rounded-lg lg:h-96 h-80 lg:p-6 p-2 mt-12 "
@@ -49,7 +50,7 @@ const Category = () => {
               }}
             >
               <div>
-                <h1 className="text-5xl font-bold text-slate-300 absolute bottom-5 ">
+                <h1 className="text-5xl font-bold text-yellow-600 absolute bottom-5 ">
                   {item.name}
                 </h1>
               </div>

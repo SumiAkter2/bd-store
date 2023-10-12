@@ -21,7 +21,7 @@ const Banner = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         style={{
-          "--swiper-pagination-color": "white",
+          "--swiper-pagination-color": "#FFBA80",
           "--swiper-pagination-bullet-size": "16px",
           "--swiper-pagination-bullet-horizontal-gap": "6px",
           "--swiper-pagination-bullet-marginBottom": "6px",
@@ -38,7 +38,7 @@ const Banner = () => {
             <div className="hero-overlay bg-black bg-opacity-40"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">
+                <h1 className="mb-8 text-5xl font-bold  ">
                   Lorem ipsum dolor sit amet.
                 </h1>
                 <p className="mb-5">
@@ -46,7 +46,7 @@ const Banner = () => {
                   assumenda excepturi exercitationem quasi. In deleniti eaque
                   aut repudiandae et a id nisi.
                 </p>
-                <button className="btn bg-gray-400 ">Get Started</button>
+                <button className="btn bg-yellow-600 mt-4 ">Get Started</button>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Banner = () => {
             <div className="hero-overlay bg-black bg-opacity-40"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">
+                <h1 className="mb-8 text-5xl font-bold  ">
                   Lorem ipsum dolor sit amet.
                 </h1>
                 <p className="mb-5">
@@ -70,7 +70,7 @@ const Banner = () => {
                   assumenda excepturi exercitationem quasi. In deleniti eaque
                   aut repudiandae et a id nisi.
                 </p>
-                <button className="btn bg-gray-400">Get Started</button>
+                <button className="btn bg-yellow-600 mt-4">Get Started</button>
               </div>
             </div>
           </div>
