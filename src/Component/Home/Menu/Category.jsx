@@ -1,5 +1,5 @@
 import useMenu from "../../../Hook/useMenu";
-
+import "./Category.css";
 import "react-tabs/style/react-tabs.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -52,7 +52,7 @@ const Category = () => {
       >
         {menu.slice(0, 4).map((item) => (
           <SwiperSlide key={item._id} item={item}>
-            <div
+            {/* <div
               className="text-start rounded-lg lg:h-96 h-80 lg:p-6 p-2 mt-12 "
               style={{
                 background: `url(${item.picture})`,
@@ -65,6 +65,30 @@ const Category = () => {
                 <h1 className="text-5xl font-bold text-yellow-600 absolute bottom-5 ">
                   {item.name}
                 </h1>
+              </div>
+            </div> */}
+            <div className="my-12 ">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="gallery-image"
+              >
+                <div className="img-box">
+                  <img
+                    className="rounded-lg  h-80 "
+                    src={item.picture}
+                    alt="category image"
+                  />
+                  <div className="transparent-box">
+                    <div className="caption flex justify-start  items-end w-full">
+                      <div>
+                        <h1 className="lg:text-5xl text-2xl font-bold  text-yellow-600 pl-5">
+                          {item.name}
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>

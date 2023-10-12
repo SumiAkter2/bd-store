@@ -1,4 +1,5 @@
 import Img from "../../assets/Home/menu/burger3.jpg";
+
 const Feature = () => {
   return (
     <div>
@@ -10,11 +11,9 @@ const Feature = () => {
             alt="stock market image"
           />
           <div className="md:w-1/2 px-6">
-            <p className="text-primary my-2 font-semibold ">
-              You are most welcome
-            </p>
-            <h1 className="text-4xl font-bold mb-6">
-              Welcome to Vantage Capital FX
+            <p className=" my-2 font-semibold ">You are most welcome</p>
+            <h1 className="text-4xl font-bold mb-6 text-yellow-600">
+              About Our Food
             </h1>
             <p className="py-6 text-xl">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,

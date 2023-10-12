@@ -23,7 +23,7 @@ const Footer = () => {
           <p className="text-2xl">Account</p>
         </div>
       </div>
-      <div className="text-center font-bold pb-6 mt-16 bg-gray-300 pt-5 lg:block hidden">
+      <div className="text-center text-yellow-600 pb-6 mt-16 bg-gray-300 pt-5 lg:block hidden">
         <p>Copy &copy; All rights reserved.</p>
       </div>
     </div>
