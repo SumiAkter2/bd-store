@@ -15,7 +15,10 @@ const Menu = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:mx-8 mx-2">
         {menu.map((item) => (
           <div key={item._id}>
-            <div className="card hover:border-yellow-600 hover:border-2 p-2 shadow-2xl ease-in duration-200">
+            <div
+              className="card hover:border-yellow-600 hover:border-2 p-2 shadow-2xl ease-in duration-200"
+              data-aos="zoom-in"
+            >
               <figure>
                 <img
                   src={item.picture}

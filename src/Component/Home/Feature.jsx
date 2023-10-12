@@ -5,13 +5,18 @@ const Feature = () => {
     <div>
       <div className="hero min-h-screen text-black mb-24">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={Img} className="md:max-w-lg rounded-lg px-6" alt=" image" />
-          <div className="md:w-1/2 px-6">
+          <img
+            data-aos="zoom-in"
+            src={Img}
+            className="md:max-w-lg rounded-lg px-6"
+            alt=" image"
+          />
+          <div className="md:w-1/2 px-6 ">
             <p className=" my-2 font-semibold ">You are most welcome</p>
             <h1 className="text-4xl font-bold mb-6 text-yellow-600">
               About Our Food
             </h1>
-            <p className="py-6 text-xl">
+            <p className="py-6 text-xl ">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
               qui ipsa vitae obcaecati sed deserunt eius omnis id et itaque iste
               asperiores assumenda, quis cupiditate in ex ducimus? Tempore quod
