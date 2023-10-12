@@ -41,9 +41,7 @@ const Menu = () => {
                     <AiFillStar color="#dfac02" />
                   </div>
 
-                  <button className="btn bg-yellow-600 bg-gray-400">
-                    Add To Cart
-                  </button>
+                  <button className="btn bg-yellow-600 ">Add To Cart</button>
                 </div>
               </div>
             </div>
